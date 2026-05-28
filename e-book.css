@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+
+    background: #FDF1D7;
+    color: #052A3C;
+
+    line-height: 1.6;
+}
+
+/* PAGINA */
+.ebook-page {
+    max-width: 900px;
+    margin: auto;
+
+    padding: 70px 20px;
+}
+
+/* HEADER */
+.ebook-header {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.ebook-header h1 {
+    font-size: 44px;
+    margin-bottom: 15px;
+
+    color: #AF2900;
+}
+
+.ebook-header p {
+    font-size: 19px;
+
+    color: #052A3C;
+    opacity: 0.85;
+}
+
+/* CONTENT */
+.ebook-content {
+    background: #6B9EBD;
+
+    padding: 45px;
+    border-radius: 24px;
+
+    color: white;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,0.12);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.ebook-content:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,0.15);
+}
+
+/* TITELS */
+.ebook-content h2 {
+    font-size: 28px;
+
+    margin-top: 0;
+    margin-bottom: 22px;
+
+    color: #FDF1D7;
+}
+
+/* PARAGRAFEN */
+.ebook-content p {
+    font-size: 18px;
+
+    margin-bottom: 22px;
+
+    color: white;
+}
+
+/* BUTTON */
+.ebook-button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 15px 22px;
+
+    background: #AF2900;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 14px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+/* HOVER */
+.ebook-button:hover {
+    background: #8e2100;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* FOCUS */
+.ebook-button:focus {
+    outline: 3px solid #FDF1D7;
+    outline-offset: 4px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+
+    .ebook-header h1 {
+        font-size: 32px;
+    }
+
+    .ebook-header p {
+        font-size: 17px;
+    }
+
+    .ebook-content {
+        padding: 28px;
+    }
+
+    .ebook-content p {
+        font-size: 16px;
+    }
+
+}

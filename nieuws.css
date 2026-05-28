@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #FDF1D7;
+    color: #052A3C;
+
+    line-height: 1.7;
+}
+
+/* MAIN */
+main {
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 70px 20px;
+}
+
+/* PAGINA TITEL */
+main h1 {
+    text-align: center;
+
+    font-size: 56px;
+
+    color: #AF2900;
+
+    margin-bottom: 60px;
+}
+
+/* NIEUWS SECTION */
+section {
+    background: white;
+
+    margin-bottom: 35px;
+
+    border-radius: 26px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* HOVER */
+section:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* SECTION HEADER */
+section h2 {
+    margin: 0;
+
+    padding: 35px 35px 15px;
+
+    font-size: 34px;
+
+    color: #AF2900;
+}
+
+/* INTRO TEKST */
+section > p {
+    padding: 0 35px 30px;
+
+    margin: 0;
+
+    font-size: 18px;
+
+    color: #052A3C;
+}
+
+/* DETAILS */
+details {
+    border-top: 1px solid rgba(5,42,60,0.08);
+}
+
+/* SUMMARY */
+details summary {
+    list-style: none;
+
+    cursor: pointer;
+
+    padding: 24px 35px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #052A3C;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+/* VERBERG STANDAARD PIJL */
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+/* CUSTOM PIJL */
+details summary::after {
+    content: "+";
+
+    font-size: 30px;
+    font-weight: 300;
+
+    color: #AF2900;
+
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease;
+}
+
+/* OPEN STATE */
+details[open] summary::after {
+    transform: rotate(45deg);
+}
+
+/* HOVER */
+details:hover summary {
+    background: #FDF1D7;
+}
+
+/* CONTENT */
+details p,
+details article,
+details ul {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+/* PARAGRAFEN */
+details p {
+    font-size: 17px;
+
+    color: #052A3C;
+
+    margin-bottom: 24px;
+}
+
+/* SUBTITELS */
+details h3 {
+    font-size: 24px;
+
+    color: #AF2900;
+
+    margin-top: 40px;
+    margin-bottom: 15px;
+
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+/* LIJST */
+details ul {
+    margin-bottom: 35px;
+}
+
+/* LIST ITEMS */
+details li {
+    background: #6B9EBD;
+
+    color: white;
+
+    margin-bottom: 14px;
+
+    padding: 16px 20px;
+
+    border-radius: 14px;
+
+    list-style: none;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 6px 16px rgba(0,0,0,0.08);
+}
+
+/* FOOTER */
+footer {
+    height: 80px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+
+    main h1 {
+        font-size: 44px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    main {
+        padding: 50px 16px;
+    }
+
+    main h1 {
+        font-size: 36px;
+    }
+
+    section h2 {
+        font-size: 24px;
+
+        padding: 28px 24px 12px;
+    }
+
+    section > p {
+        padding: 0 24px 24px;
+
+        font-size: 16px;
+    }
+
+    details summary {
+        padding: 20px 24px;
+
+        font-size: 18px;
+    }
+
+    details p,
+    details article,
+    details ul,
+    details h3 {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    details h3 {
+        font-size: 21px;
+    }
+
+    details p {
+        font-size: 16px;
+    }
+
+}

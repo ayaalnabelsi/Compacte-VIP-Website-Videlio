@@ -1,23 +1,178 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <title>Videlio VIP</title>
 </head>
+
 <body>
-    <header>
+
+    <!-- HERO -->
+    <header class="hero">
+
+        <nav class="navbar">
+            <h2 class="logo">Videlio VIP</h2>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projecten</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Over ons</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+
+            <h1>Samen bouwen aan een inclusieve samenleving</h1>
+
+            <p>
+                Stichting Videlio ondersteunt mensen met een visuele beperking
+                door ontmoeting, innovatie en participatie mogelijk te maken.
+            </p>
+
+            <a href="#" class="hero-button">
+                Ontdek meer
+            </a>
+
+        </div>
 
     </header>
 
     <main>
 
+        <!-- INTRO -->
+        <section class="intro-section">
 
-    <footer>
+            <div class="intro-card">
 
-    </footer>
-    <script src="script.js"></script>
+                <h2>Wat is Videlio?</h2>
+
+                <p>
+                    Stichting Videlio is er voor mensen met een visuele beperking.
+                    We verbinden, inspireren en versterken elkaar.
+                </p>
+
+            </div>
+
+            <div class="intro-card">
+
+                <h2>Wat betekent VIP?</h2>
+                <p>
+                    VIP staat voor Visually Impaired Person.
+                    Wij zetten ons in voor een wereld waarin VIP's
+                    volwaardig mee kunnen doen.
+                </p>
+
+            </div>
+
+            <div class="intro-card">
+
+                <h2>Wat is VIP Lab?</h2>
+
+                <p>
+                    VIP Lab is onze plek voor innovatie.
+                    Hier ontwikkelen we samen nieuwe ideeën,
+                    projecten en oplossingen.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- INFO BLOKKEN -->
+        <section class="info-section">
+            <div class="info-card">
+
+                <details>
+                    <summary>Blog</summary>
+
+                    <ul>
+                        <li><a href="http://127.0.0.1:5501/nieuws.html">Nieuws</a></li>
+                        <li><a href="http://127.0.0.1:5501/podcast.html">Podcast</a></li>
+                        <li><a href="http://127.0.0.1:5501/e-book.html">E-book</a></li>
+                    </ul>
+
+                </details>
+
+            </div>
+
+            <div class="info-card">
+
+                <details>
+                    <summary>Projecten</summary>
+
+                    <ul>
+                        <li><a href="http://127.0.0.1:5501/projecten.html">Lumicane</a></li>
+                        <li><a href="http://127.0.0.1:5501/projecten.html">Viziere</a></li>
+                    </ul>
+
+                </details>
+
+            </div>
+
+            <div class="info-card">
+
+                <details>
+                    <summary>Over ons</summary>
+                    <ul>
+                        <li><a href="http://127.0.0.1:5501/over-ons.html">Onze missie</a></li>
+                        <li><a href="http://127.0.0.1:5501/over-ons.html">Bestuur</a></li>
+                    </ul>
+
+                </details>
+            </div>
+        </section>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+    
+            <h3>Contactformulier</h3>
+    
+            <p>
+                Heeft u een vraag of wilt u iets met ons delen?
+            </p>
+    
+            <form class="contact-form">
+    
+                <input 
+                    type="text" 
+                    name="name"
+                    placeholder="Naam"
+                    required
+                >
+            
+                <input 
+                    type="email" 
+                    name="email"
+                    placeholder="E-mailadres"
+                    required
+                >
+            
+                <textarea 
+                    name="message"
+                    rows="6"
+                    placeholder="Bericht"
+                    required
+                ></textarea>
+            
+                <button type="submit" class="footer-button">
+                    Verstuur
+                </button>
+            
+            </form>
+    
+        </div>
+    
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
