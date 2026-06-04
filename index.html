@@ -9,166 +9,159 @@
 </head>
 
 <body>
-
-    <!-- HERO -->
-    <header class="hero">
-
-        <nav class="navbar">
-            <h2 class="logo">Videlio VIP</h2>
-
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projecten</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Over ons</a></li>
-            </ul>
-        </nav>
-
-        <div class="hero-content">
-
-            <h1>Samen bouwen aan een inclusieve samenleving</h1>
-
-            <p>
-                Stichting Videlio ondersteunt mensen met een visuele beperking
-                door ontmoeting, innovatie en participatie mogelijk te maken.
-            </p>
-
-            <a href="#" class="hero-button">
-                Ontdek meer
-            </a>
-
+    <header class="site-header">
+        <div class="accessibility-toggle">
+            <span>Toegankelijk</span>
+            <button class="toggle-button" aria-label="Toegankelijke modus aan of uit zetten">
+                <span></span>
+            </button>
         </div>
 
+        <nav class="main-nav" aria-label="Hoofdnavigatie">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Over ons</a></li>
+                <li><a href="activities.html">Community</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
+        <section class="hero">
+            <!-- <div class="scroll-indicator" aria-hidden="true">
+                    <span></span>
+                </div> -->
 
-        <!-- INTRO -->
-        <section class="intro-section">
+            <h1>Videlio</h1>
 
-            <div class="intro-card">
+            <p>
+                Met een positieve en concrete aanpak volwaardig
+                meedoen in de maatschappij
+            </p>
 
-                <h2>Wat is Videlio?</h2>
+            <!-- <a href="about.html" class="hero-button">Wie zijn wij?</a> -->
+        </section>
 
-                <p>
-                    Stichting Videlio is er voor mensen met een visuele beperking.
-                    We verbinden, inspireren en versterken elkaar.
-                </p>
 
-            </div>
+        <section class="about-viplab">
 
-            <div class="intro-card">
-
+            <div class="info-item">
                 <h2>Wat betekent VIP?</h2>
                 <p>
-                    VIP staat voor Visually Impaired Person.
-                    Wij zetten ons in voor een wereld waarin VIP's
-                    volwaardig mee kunnen doen.
+                    VIP staat voor Visually Impaired Person. Wij zetten ons in voor een wereld waarin VIP's volwaardig
+                    mee kunnen doen.
                 </p>
-
             </div>
 
-            <div class="intro-card">
-
-                <h2>Wat is VIP Lab?</h2>
-
+            <div class="info-item">
+                <h2>Wat is VIPLab?</h2>
                 <p>
-                    VIP Lab is onze plek voor innovatie.
-                    Hier ontwikkelen we samen nieuwe ideeën,
-                    projecten en oplossingen.
+                    VIPLab is de maakplek van Videlio.<br>
+                    VIPs en makers bouwen hier samen aan hulpmiddelen en oplossingen voor mensen met een visuele
+                    beperking.
+                    VIPLab krijgt een plek in het toekomstige ontmoetingscentrum van Videlio in Eindhoven.
                 </p>
+            </div>
 
+            <div class="info-item">
+                <h2>Voor wie is VIPLab?</h2>
+                <p>
+                    • VIPs met een vraag, probleem of idee.<br>
+                    • Studenten, ontwerpers, techneuten, ondernemers en makers.<br>
+                    • Organisaties of mensen die willen bijdragen met kennis, materiaal, netwerk of geld.
+                </p>
+            </div>
+
+            <div class="info-item">
+                <h2>Wat kun je doen bij VIPLab?</h2>
+                <p>
+                    • Een dagelijkse uitdaging inbrengen<br>
+                    • Meedenken over een oplossing<br>
+                    • Meehelpen met bouwen, testen of ontwerpen<br>
+                    • Hulpmiddelen en lifehacks ontwikkelen<br>
+                    • Meedoen aan workshops, zoals Stok & Stekker
+                </p>
+            </div>
+
+            <div class="info-item">
+                <h2>Doe mee</h2>
+                <p>
+                    Word lid, sluit je aan bij onze community of draag bij aan onze missie.
+                </p>
+                <a href="#" class="btn">Doe mee</a>
             </div>
 
         </section>
 
-        <!-- INFO BLOKKEN -->
-        <section class="info-section">
-            <div class="info-card">
+        <section class="highlight-section" aria-label="Uitgelichte projecten">
+            <article class="highlight-card">
+                <h2>Lumicane</h2>
+                <p>Skills voor een slimme, creatieve organisatie.</p>
+            </article>
 
-                <details>
-                    <summary>Blog</summary>
+            <article class="highlight-card">
+                <h2>Project Viziere</h2>
+                <p>Maak impact met je verhaal op on- en offline kanalen.</p>
+            </article>
 
-                    <ul>
-                        <li><a href="http://127.0.0.1:5501/nieuws.html">Nieuws</a></li>
-                        <li><a href="http://127.0.0.1:5501/podcast.html">Podcast</a></li>
-                        <li><a href="http://127.0.0.1:5501/e-book.html">E-book</a></li>
-                    </ul>
+            <article class="highlight-card">
+                <h2>OV Knoop</h2>
+                <p>Maak impact met je verhaal op on- en offline kanalen.</p>
+            </article>
+        </section>
 
-                </details>
 
+        <section class="contact-section" aria-labelledby="contact-title">
+
+            <div class="contact-content">
+        
+                <h2 id="contact-title">Contact</h2>
+        
+                <p>
+                    Wij helpen je graag!
+                </p>
+        
+                <form class="contact-form">
+        
+                    <div class="form-group">
+                        <label for="naam">Naam</label>
+                        <input
+                            type="text"
+                            id="naam"
+                            name="naam"
+                            required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="bericht">Bericht</label>
+                        <textarea
+                            id="bericht"
+                            name="bericht"
+                            rows="6"
+                            required></textarea>
+                    </div>
+        
+                    <button type="submit" class="contact-button">
+                        Versturen
+                    </button>
+        
+                </form>
+        
             </div>
-
-            <div class="info-card">
-
-                <details>
-                    <summary>Projecten</summary>
-
-                    <ul>
-                        <li><a href="http://127.0.0.1:5501/projecten.html">Lumicane</a></li>
-                        <li><a href="http://127.0.0.1:5501/projecten.html">Viziere</a></li>
-                    </ul>
-
-                </details>
-
-            </div>
-
-            <div class="info-card">
-
-                <details>
-                    <summary>Over ons</summary>
-                    <ul>
-                        <li><a href="http://127.0.0.1:5501/over-ons.html">Onze missie</a></li>
-                        <li><a href="http://127.0.0.1:5501/over-ons.html">Bestuur</a></li>
-                    </ul>
-
-                </details>
-            </div>
+        
         </section>
     </main>
+    </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-
-        <div class="footer-container">
-    
-            <h3>Contactformulier</h3>
-    
-            <p>
-                Heeft u een vraag of wilt u iets met ons delen?
-            </p>
-    
-            <form class="contact-form">
-    
-                <input 
-                    type="text" 
-                    name="name"
-                    placeholder="Naam"
-                    required
-                >
-            
-                <input 
-                    type="email" 
-                    name="email"
-                    placeholder="E-mailadres"
-                    required
-                >
-            
-                <textarea 
-                    name="message"
-                    rows="6"
-                    placeholder="Bericht"
-                    required
-                ></textarea>
-            
-                <button type="submit" class="footer-button">
-                    Verstuur
-                </button>
-            
-            </form>
-    
-        </div>
-    
     </footer>
 
     <script src="script.js"></script>

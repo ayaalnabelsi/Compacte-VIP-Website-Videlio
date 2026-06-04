@@ -1,0 +1,200 @@
+/* =========================
+   ALGEMEEN
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #111610;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.join-hero {
+    background-color: black;
+    color: white;
+
+    text-align: center;
+
+    padding: 8rem 2rem 5rem;
+}
+
+.join-hero h1 {
+    margin: 0 0 1rem;
+
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-family: Georgia, serif;
+}
+
+.join-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+/* =========================
+   FORMULIER
+========================= */
+
+.join-form-section {
+    max-width: 800px;
+
+    margin: -3rem auto 5rem;
+    padding: 0 1.5rem;
+
+    position: relative;
+    z-index: 2;
+}
+
+.join-form {
+    background-color: white;
+
+    padding: 2rem;
+    border-radius: 1rem;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+
+    font-weight: bold;
+    color: #111610;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 1rem;
+
+    border: 1px solid #d8d8d8;
+    border-radius: 0.5rem;
+
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #bd2100;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.submit-button {
+    border: none;
+
+    padding: 1rem 2rem;
+
+    background-color: #bd2100;
+    color: white;
+
+    border-radius: 999px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #a11c00;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   LUMICANE
+========================= */
+
+.project-highlight {
+    max-width: 1000px;
+
+    margin: 0 auto 5rem;
+    padding: 3rem 2rem;
+
+    background-color: #bd2100;
+    color: white;
+
+    border-radius: 1rem;
+
+    text-align: center;
+}
+
+.project-highlight h2 {
+    margin-top: 0;
+
+    font-size: 2rem;
+    font-family: Georgia, serif;
+}
+
+.project-highlight p {
+    max-width: 650px;
+
+    margin: 1rem auto 2rem;
+
+    line-height: 1.7;
+}
+
+.project-button {
+    display: inline-block;
+
+    padding: 1rem 2rem;
+
+    background-color: white;
+    color: #bd2100;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 999px;
+
+    transition: 0.3s ease;
+}
+
+.project-button:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================
+   TABLET & DESKTOP
+========================= */
+
+@media (min-width: 768px) {
+
+    .join-form {
+        padding: 3rem;
+    }
+
+    .join-hero p {
+        font-size: 1.2rem;
+    }
+
+}
