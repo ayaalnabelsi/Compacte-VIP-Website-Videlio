@@ -115,7 +115,7 @@ body {
     max-width: 22rem;
     margin: 2rem 0;
   
-    font-size: 1.1rem;
+
     line-height: 1.5;
     color: #f4f4f4;
   }
@@ -322,9 +322,9 @@ body {
       gap: 4rem;
     }
   
-    .main-nav a {
+    /* .main-nav a {
       font-size: 1.5rem;
-    }
+    } */
   
     .hero {
       min-height: 82vh;
@@ -338,7 +338,6 @@ body {
     .hero p {
       max-width: 650px;
       margin: 3rem 0 2.5rem;
-      font-size: 1.6rem;
     }
   
     .intro-cards {
