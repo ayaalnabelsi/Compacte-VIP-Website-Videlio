@@ -163,11 +163,6 @@ body {
   
   .info-item p {
     margin: 0;
-  
-    max-width: 750px;
-  
-    font-size: 1.1rem;
-    line-height: 1.7;
     color: #333;
   }
   
@@ -241,12 +236,8 @@ body {
       gap: 3rem;
     }
   
-    .info-item h2 {
+    h2 {
       font-size: 2rem;
-    }
-  
-    .info-item p {
-      font-size: 1.15rem;
     }
   
     .highlight-section {
